@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" height="500px" width="500px" style="border-style: solid;">
+    </canvas>
+ 
+</body>
+    <script>
+        var cir=document.getElementById("myCanvas")
+        var ct=cir.getContext('2d')
+        //  const ctx = ct.getContext('2d');
+
+         ct.beginPath()
+         ct.arc(200, 100, 50, 0,9 * Math.PI)
+         ct.stroke()
+        ct.font = "30px Georgia";
+        ct.strokeText("Hello World", 300, 250);
+        ct.moveTo(0,350)
+        ct.lineTo(500,350)
+        ct.stroke()
+        </script>
+
+</html>
