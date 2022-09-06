@@ -1,0 +1,10 @@
+code p {
+    color: white;
+    background-color: blueviolet;
+}
+
+body {
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+
+}
