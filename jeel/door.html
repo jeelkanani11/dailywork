@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Door</title>
     <style>
         .box {
             position: relative;
@@ -14,7 +14,7 @@
             border: 2px solid black;
             margin: auto;
             background-color: bisque;
-            transform-origin: left;
+
         }
 
         .door1 {
@@ -22,6 +22,8 @@
             height: 100%;
             width: 200px;
             background-color: blueviolet;
+            transform-origin: left;
+            transition: transform .45s;
         }
 
         .door2 {
@@ -30,6 +32,8 @@
             width: 200px;
             background-color: palevioletred;
             margin-left: 200px;
+            transform-origin: right;
+            transition: transform .45s;
         }
 
         .circle1 {
@@ -52,8 +56,12 @@
             background-color: blue;
         }
 
-        .circle1:hover {
-            transform: perspective(100px) rotate(50deg);
+        .door1:hover {
+            transform: perspective(1200px) rotateY(-50deg);
+        }
+
+        .door2:hover {
+            transform: perspective(1200px) rotatey(50deg);
         }
     </style>
 </head>
