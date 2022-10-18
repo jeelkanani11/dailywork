@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <style>
+        #btn1 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <input onclick="jeel()" type="button" id="btn1" value="click me">
+    <input onpointerout="jeel()" type="text">
+    <!-- <p id="p1">hello</p> -->
+    <script>
+
+        // document.write(a+b);
+        // function display() {
+        //     var a = 10;
+        //     var b = 20;
+        //     document.write(a + b); 
+        // }
+        // display();
+                            // function jeel(){
+                            //     var a = prompt('enter value of a:');
+                            //     var b = prompt('enter value of b:');
+                            //     document.write(a+b);
+                            // }
+                            // jeel()
+
+                                        // function kkk(){
+                                        //     if(confirm('for continue press ok')==true){
+                                        //         document.write('yes');
+                                        //     }
+                                        // }
+                                        // kkk();
+
+        // alert('hi this is my website')
+
+        function jeel() {
+            var temp = document.getElementById('demo').innerHTML
+            document.getElementById('temp').innerHTML = temp
+        }
+
+                        //return without parameter
+
+                            // var a = 10;
+                            // var b = 20;
+                            // var c = 30;
+                            // function sum() {
+                            //     return a + b + c;
+                            // }
+                            // var v = sum();
+                            // console.log(v);
+
+                                                // anonymous function
+
+                                                var a = function(){
+                                                    console.log('hii');
+                                                }
+                                                a();
+
+
+                                                                //direct function
+
+                                                                // (function(){
+                                                                //     console.log('hii');
+                                                                // })();
+
+    </script>
+    <p id="demo">hello</p>
+    <p id="temp"></p>
+
+</body>
+
+</html>
