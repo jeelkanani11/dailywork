@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaining</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <p> <h3>welcome to my site</h3> </p>
+    </div>
+    <button>click me</button>
+
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $('h3').css('color','#e600ac').hide(2000).show(3000);
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get-set</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="head"> <p>this is my site</p> </h1>
+    <button id="btn">click me</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                // var b=$('#head').html();
+                // var b = $('#head').text();
+                // alert(b);
+                // $('#head').text('hii this is repace')
+                $('#head').html('<p style="color:red"> hii this is replace </p>');
+                
+            })
+        })
+    </script>
+</body>
+</html>
