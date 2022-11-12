@@ -30,6 +30,12 @@
             display: none;
 
         }
+        .footer{
+            border: 1px solid black;
+            height: 200px;
+            cursor: pointer;
+            
+        }
     </style>
 </head>
 
@@ -210,6 +216,17 @@
             saepe?</p>
     </div>
 
+    <footer>
+        <div class="footer">
+            <P>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus laboriosam quam sequi unde eius sit numquam, quis quas? Eius laborum architecto tenetur doloremque. Alias reprehenderit earum veniam adipisci, sequi labore.
+            </P>
+            <P>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam rerum fugiat corrupti maxime laboriosam voluptate possimus dolor temporibus. Rem laudantium dolore rerum ex, deleniti fugit expedita ad id quasi inventore.
+            </P>
+        </div>
+    </footer>
+
 
     <button class="btn">SCROLL</button>
 
@@ -223,9 +240,15 @@
                         $('html,body').animate({
                             scrollTop: 0
 
-                        }, 1000);
+                        }, 1000);          
+
                     })
-                }
+                    }
+                    $('.footer').click(function () {
+                    $('.btn').trigger('click')
+                })
+                    
+                
 
                 if ($(this).scrollTop() >= 150) {
                     $('.btn').css('display', 'block')
@@ -233,6 +256,8 @@
                 if ($(this).scrollTop() <= 20) {
                     $('.btn').css('display', 'none')
                 }
+
+               
             })
         })
     </script>
