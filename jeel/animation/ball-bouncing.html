@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        .ball {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            border-radius: 50%;
+            background-color: red;
+
+            animation-name: ballpush;
+            animation-iteration-count: 1;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes ballpush {
+            0% {
+
+                top: 0PX;
+                left: 0PX;
+
+                animation-timing-function: ease-out;
+            }
+
+            20% {
+                top: 550PX;
+                left: 0PX;
+                animation-timing-function: ease-out;
+            }
+
+            40% {
+                top: 200px;
+                left: 400px;
+                animation-timing-function: ease-out;
+            }
+
+            60% {
+                top: 550px;
+                left: 600px;
+                animation-timing-function: ease-out;
+            }
+
+            80% {
+                top: 400PX;
+                left: 800px;
+            }
+
+            100% {
+                top: 550px;
+                left: 93%;
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>

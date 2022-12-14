@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door</title>
+    <style>
+        .box {
+            position: relative;
+            height: 600px;
+            width: 400px;
+            border: 2px solid black;
+            margin: auto;
+            background-color: bisque;
+
+        }
+
+        .door1 {
+            position: absolute;
+            height: 100%;
+            width: 200px;
+            background-color: blueviolet;
+            transform-origin: left;
+            transition: transform .45s;
+        }
+
+        .door2 {
+            position: absolute;
+            height: 100%;
+            width: 200px;
+            background-color: palevioletred;
+            margin-left: 200px;
+            transform-origin: right;
+            transition: transform .45s;
+        }
+
+        .circle1 {
+            position: absolute;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            left: 140px;
+            top: 260px;
+            background-color: blue;
+        }
+
+        .circle2 {
+            position: absolute;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            right: 140px;
+            top: 260px;
+            background-color: blue;
+        }
+
+        .door1:hover {
+            transform: perspective(1200px) rotateY(-50deg);
+        }
+
+        .door2:hover {
+            transform: perspective(1200px) rotatey(50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="door1">
+            <div class="circle1"></div>
+        </div>
+        <div class="door2">
+            <div class="circle2"></div>
+        </div>
+    </div>
+</body>
+
+</html>

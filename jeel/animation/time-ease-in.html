@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .ball {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            border-radius: 50%;
+            background-color: red;
+            animation-name: time;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes time {
+            from {
+                top: 0px;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ball"></div>
+</body>
+
+</html>
