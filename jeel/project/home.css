@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.main {
+    height: 200vh;
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar {
+    background: linear-gradient(to right, #92a2f5, #f0748c);
+}
+
+ul li {
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    background-color: aqua;
+}
+
+.container-fluid img {
+    height: 70px;
+    width: 80px;
+
+}
+
+/* img {
+    height: 90px;
+    width: 90px;
+} */
+
+.banner img {
+    height: 300px;
+    width: 100%;
+}
+
+.banner {
+    margin-top: 75px;
+    height: 300px;
+}
+
+/* .container img{
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+    
+} */
+#jjj {
+    height: 350px;
+}
+
+.container {
+    margin-top: 70px;
+
+
+}
+
+#button {
+    margin-left: 130px;
+    margin-top: -80px;
+    /* margin-bottom: 10px; */
+}
+
+.card-text {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+/* footer */
+.footer {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.box-1 {
+    height: auto;
+    width: 240px;
+    /* border: 1px solid white; */
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.content i {
+    color: white;
+}
+
+.content {
+    color: white;
+}
+
+.content span {
+    font-size: 22px;
+    margin-left: 10px;
+
+}
+
+.content p {
+    font-size: 16px;
+    color: gray;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.icon i {
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.images img {
+    height: 40px;
+    width: 200px;
+}
