@@ -3,18 +3,29 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+@media screen and (min-width:767) and (max-width:991) {
+    .banner div {
+        right: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 /* navbar */
 .main {
     height: 200vh;
     width: 100%;
 }
-.navbar .navbar-nav .nav-link{
+
+.navbar .navbar-nav .nav-link {
     color: white;
     font-size: 20px;
 }
+
 .navbar {
-   
-    background:linear-gradient(to right,#92a2f5,#f0748c);
+
+    background: linear-gradient(to right, #92a2f5, #f0748c);
 }
 
 ul li {
@@ -24,19 +35,20 @@ ul li {
 .dropdown-menu {
     background-color: aqua;
 }
-.container-fluid img{
-    height:70px;
+
+.container-fluid img {
+    height: 70px;
     width: 80px;
 }
 
 /* end navbar */
 
 /* section */
-.section{
-    margin-top: 80px;
+.section {
+    margin-top: 60px;
 }
 
-.box{
+.box {
     /* border: 1px solid black; */
     height: auto;
     width: 400px;
@@ -44,13 +56,16 @@ ul li {
     text-align: center;
     margin-left: 500px;
 }
-#about{
+
+#about {
     color: red;
 }
-h2{
+
+h2 {
     font-family: "Amatic SC", sans-serif;
 }
-.contenet{
+
+.contenet {
     margin-top: 90px;
 }
 
@@ -59,44 +74,53 @@ h2{
 
 /* container */
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
 }
-.box1 img{
+
+.box1 img {
     height: 500px;
-    width: 600px;
+    width: auto;
     margin-top: 25px;
-    
-   
+
+
 }
 
-.box2{
-    height: 500px;
+.box1 img {
+
+    width: 100%;
+}
+
+.box2 {
+    height: auto;
     width: auto;
     /* border: 1px solid black; */
     margin-left: 70px;
     margin-top: 50px;
-    
+
 }
-.box2 p{
+
+.box2 p {
     font-family: initial;
     font-size: 20px;
 }
-.banner{
-    background-color:white;
-    width: 25%;
+
+.banner {
+    background-color: white;
+    width: auto;
     position: absolute;
     top: 500px;
-    left: 250px;
+    left: 240px;
     justify-content: center;
     text-align: center;
     opacity: 0.8;
 }
-.number{
+
+.number {
     font-size: 20px;
     color: red;
-    font-weight:500;
+    font-weight: 500;
 }
 
 /* end container */
@@ -106,7 +130,7 @@ h2{
     height: auto;
     width: 100%;
     background-color: black;
-   
+
 }
 
 .box-1 {
@@ -148,4 +172,3 @@ h2{
     height: 40px;
     width: 200px;
 }
-
