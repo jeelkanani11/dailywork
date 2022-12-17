@@ -89,9 +89,12 @@ ul li {
 .footer {
     height: auto;
     width: 100%;
-    background-color: black;
-    /* display: flex;
-    flex-direction: row; */
+    background: url(images/fbac2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.407);
+    background-blend-mode: overlay;
+
 }
 
 .box-1 {
@@ -118,14 +121,14 @@ ul li {
 
 .content p {
     font-size: 16px;
-    color: gray;
+    color:white;
     font-weight: bolder;
     margin-left: 20px;
 }
 
 .icon i {
     padding: 10px;
-    color: gray;
+    color:white;
     cursor: pointer;
 }
 

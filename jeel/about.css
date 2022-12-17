@@ -3,14 +3,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-@media screen and (min-width:767) and (max-width:991) {
-    .banner div {
-        right: 20px;
-        justify-content: center;
-        text-align: center;
+@keyframes ani {
+    from {
+     opacity: 0;
+     transform: translatex(-100px);
     }
-}
+    to {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+
+
 
 /* navbar */
 .main {
@@ -46,15 +50,17 @@ ul li {
 /* section */
 .section {
     margin-top: 60px;
+    animation-name: ani;
+    animation-duration:1s;
 }
 
 .box {
     /* border: 1px solid black; */
     height: auto;
-    width: 400px;
+    width: auto;
     justify-content: center;
     text-align: center;
-    margin-left: 500px;
+    margin-left: auto;
 }
 
 #about {
@@ -76,7 +82,8 @@ h2 {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
 }
 
 .box1 img {
@@ -84,11 +91,17 @@ h2 {
     width: auto;
     margin-top: 25px;
 
+}
 
+.box1 {
+    position: relative;
+    height: auto;
+    width: auto;
+    animation-name: ani;
+    animation-duration:2s;
 }
 
 .box1 img {
-
     width: 100%;
 }
 
@@ -98,6 +111,8 @@ h2 {
     /* border: 1px solid black; */
     margin-left: 70px;
     margin-top: 50px;
+    animation-name: ani;
+    animation-duration:3s;
 
 }
 
@@ -110,8 +125,8 @@ h2 {
     background-color: white;
     width: auto;
     position: absolute;
-    top: 500px;
-    left: 240px;
+    top: 350px;
+    left: 200px;
     justify-content: center;
     text-align: center;
     opacity: 0.8;
@@ -129,10 +144,15 @@ h2 {
 .footer {
     height: auto;
     width: 100%;
-    background-color: black;
+    background: url(images/fbac2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.406);
+    background-blend-mode: overlay;
 
 }
 
+   
 .box-1 {
     height: auto;
     width: 240px;
@@ -157,14 +177,16 @@ h2 {
 
 .content p {
     font-size: 16px;
-    color: gray;
+    /* color: gray; */
+    color:white;
     font-weight: bolder;
     margin-left: 20px;
 }
 
 .icon i {
     padding: 10px;
-    color: gray;
+    /* color: gray; */
+    color:white ;
     cursor: pointer;
 }
 
