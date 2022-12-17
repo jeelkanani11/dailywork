@@ -3,16 +3,18 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 @keyframes ani {
     from {
-     opacity: 0;
-     transform: translatex(-100px);
+        opacity: 0;
+        transform: translatex(-100px);
     }
+
     to {
-     opacity: 1;
-     transform: translate(0px);
+        opacity: 1;
+        transform: translate(0px);
     }
-   }
+}
 
 
 
@@ -51,7 +53,7 @@ ul li {
 .section {
     margin-top: 60px;
     animation-name: ani;
-    animation-duration:1s;
+    animation-duration: 1s;
 }
 
 .box {
@@ -83,7 +85,7 @@ h2 {
 .container {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .box1 img {
@@ -98,7 +100,7 @@ h2 {
     height: auto;
     width: auto;
     animation-name: ani;
-    animation-duration:2s;
+    animation-duration: 2s;
 }
 
 .box1 img {
@@ -112,7 +114,7 @@ h2 {
     margin-left: 70px;
     margin-top: 50px;
     animation-name: ani;
-    animation-duration:3s;
+    animation-duration: 3s;
 
 }
 
@@ -125,8 +127,8 @@ h2 {
     background-color: white;
     width: auto;
     position: absolute;
-    top: 350px;
-    left: 200px;
+    top: 65%;
+    left: 30%;
     justify-content: center;
     text-align: center;
     opacity: 0.8;
@@ -152,7 +154,7 @@ h2 {
 
 }
 
-   
+
 .box-1 {
     height: auto;
     width: 240px;
@@ -178,7 +180,7 @@ h2 {
 .content p {
     font-size: 16px;
     /* color: gray; */
-    color:white;
+    color: white;
     font-weight: bolder;
     margin-left: 20px;
 }
@@ -186,7 +188,7 @@ h2 {
 .icon i {
     padding: 10px;
     /* color: gray; */
-    color:white ;
+    color: white;
     cursor: pointer;
 }
 
