@@ -17,7 +17,6 @@
 }
 
 
-
 /* navbar */
 .main {
     height: 200vh;
@@ -151,7 +150,7 @@ h2 {
 .footer {
     height: auto;
     width: 100%;
-    background: url(images/fbac2.jpg);
+    background: url(images/fbac.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.406);
