@@ -2,18 +2,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; */
-    /* color: white; */
+
 }
+
 @keyframes ani {
- from {
-  opacity: 0;
-  transform: translateY(-100px);
- }
- to {
-  opacity: 1;
-  transform: translate(0px);
- }
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
 
@@ -21,7 +22,6 @@
 .main {
     height: 100vh;
     width: 100%;
-    /* background-color: aqua; */
     background-image: url(images/jeel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,86 +29,146 @@
     background-blend-mode: overlay;
 }
 
-.nav {
-    width: 100%;
-    height: 100px;
-    /* background-color: rgb(111, 144, 173); */
-    display: flex;
-
+.container-fluid img {
+    height: 170px;
+    width: 170px;
 }
 
-.nav ul {
-    display: flex;
-    flex-direction: row;
-    margin-left: 375px;
-    margin-top: 65px;
-    gap: 30px;
-}
-
-.nav li {
-    list-style-type: none;
-    /* padding: 15px; */
+.navbar .navbar-nav .nav-link {
     color: white;
+    font-size: 25px;
 }
 
-.search {
-    /* border: 1px solid black; */
-    padding: 6px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(184, 183, 183);
 
 }
 
-ul li {
-    font-size: 20px;
-    font-weight: 100px;
-}
-
-input:focus {
-    outline: none;
-}
-
-.search i {
-    color: black;
-    margin-left: -25px;
-    margin-top: 55px;
-    color: white;
-}
-
-.search input {
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.534);
-    /* background-color:  transparent; */
-    color: white;
-    font-size: 15px;
-    font-weight: 200px;
-    width: 195px;
-    margin-left: 50px;
-    padding: 5px;
-    margin-top: 55px;
-    border-radius: 8px;
-
-}
-
-li:hover {
-    /* background-color: white; */
-    color:rgb(215, 213, 213);
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.logo {
-    height: 180px;
-    width: 180px;
-    color: white;
-    margin-left: 35px;
-    position: relative;
-    top: -10px;
+.navbar-toggler {
+    background-color: white !important;
 }
 
 .box {
+
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    animation-name: ani;
+    animation-duration: 2s;
+    line-height: 28px;
+
+}
+
+.h1 {
+    color: white;
+    font-size: 50px;
+    opacity: 0.9;
+
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+span {
+    margin-top: 10px;
+}
+
+#btn {
+
+    height: 50px;
+    width: 150px;
+    border-radius: 12px;
+    background-color: white;
+    opacity: 0.8;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+#btn:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.534);
+
+}
+
+#btn a {
+    text-decoration: none;
+    color: black;
+}
+
+#btn a:hover {
+    color: white;
+}
+
+/* footer */
+.footer {
+    height: auto;
+    width: 100%;
+    background: url(images/fbac2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.407);
+    background-blend-mode: overlay;
+
+}
+
+.box-1 {
+    height: auto;
+    width: 240px;
     /* border: 1px solid white; */
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.content i {
+    color: white;
+}
+
+.content {
+    color: white;
+}
+
+.content span {
+    font-size: 22px;
+    margin-left: 10px;
+
+}
+
+.content p {
+    font-size: 16px;
+    color: white;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.icon i {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.images img {
+    height: 40px;
+    width: 200px;
+}
+
+/* 
+
+
+
+
+  
+    
+
+
+.box {
+   
     height: 200px;
     width: 500px;
     margin: auto;
@@ -167,7 +227,7 @@ button a:hover{
     opacity: 0.9;
     min-width: 90px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* z-index: 1; */
+   
     margin-left: 677px;
     margin-top: 93px;
 
@@ -191,7 +251,6 @@ li a {
     color: white;
 }
 
-/* footer */
 .footer {
     height: 300px;
     width: 100%;
@@ -203,7 +262,6 @@ li a {
 .box-1 {
     height: 250px;
     width: auto;
-    /* border: 1px solid white; */
     padding: 10px;
     margin-top: 50px;
     margin-left: 80px;
@@ -239,4 +297,4 @@ li a {
 .images img{
     height: 40px;
     width: 200px;
-}
+} */

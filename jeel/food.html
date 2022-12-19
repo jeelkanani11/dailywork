@@ -11,35 +11,120 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         
         
 </head>
 <body >
-   <div class="main">
-    <div class="nav">
-        <img class="logo" src="images/JJJ.png" alt="">
-        <ul>
-            <li> <a href="homepage.html"> HOME </a></li>
-            <li id="jjj">MENU</li>
-        
-            <li> <a href="about.html"> ABOUT US </a></li>
-            <li>CONTACT US</li>
-        </ul>
-        <div class="list">
-           <a href="">Pizza</a> 
-           <a href="">Burger</a>
-           <a href="">Fries</a>
-           <a href="">Pasta</a>
-           <a href="">Coca-Cola</a>
-           <a href="">Shakes</a>
-        </div>
-        
-        <div class="search" >
-            <input type="text" placeholder="search here">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+    <div class="main">
+        <nav  class="navbar  navbar-expand-lg col-12 ">
+            <div class="container-fluid">
+              <img class="logo" src="images/jjj.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="homepage.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Pizza</a></li>
+                      <li><a class="dropdown-item" href="#">Burger</a></li>
+                      <li><a class="dropdown-item" href="#">Fries</a></li>
+                      <li><a class="dropdown-item" href="#">Pasta</a></li>
+                      <li><a class="dropdown-item" href="#">Coca-Cola</a></li>
+                      <li><a class="dropdown-item" href="#">Shakes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light " type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="row">
+            <div class="col-12">
+                <div class="box">
+                    <span class="h1">Hello Foodies....</span>
+                     <p class="text">Wel Come to my Website</p>
+                     <p>Enjoy your food. <p>We serve only the freshest ingriedent.</p> </p>
+                    <BUtton id="btn"> <a href="homepage.html"> ORDER &nbsp; NOW </a></BUtton>
+                </div>
+              </div>
+          </div>
+          
     </div>
-    <div class="box">
+    <!-- footer -->
+ 
+ <div class="footer">
+    <div class="row">
+      <div class=" col-sm">
+        <div class="box-1 ">
+          <div class="content">
+              <i class="fa-solid fa-phone fa-2x"></i> 
+              <span>Contact Us</span>
+              <p>Phone: +1 5589 55488 55 <br>
+                  Email: info@example.com
+                  </p>
+              
+          </div>
+      </div>
+      </div>
+      <div class=" col-sm">
+        <div class="box-1 ">
+          <div class="content">
+              <i class="fa-regular fa-clock fa-2x"></i>
+              <span>Opening Hours</span>
+              <p>Mon-Sat: 9AM - 23PM <br>
+                  Sunday: Closed</p>
+          </div>
+      </div>
+      </div>
+      <div class=" col-sm">
+        <div class="box-1 ">
+          <div class="content">
+            <span>Follow Us</span>  <br>
+            <div class="icon">
+            <i class="fa-brands fa-instagram  fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+            <i class="fa-brands fa-facebook-f fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </div>
+          </div>
+      </div>
+      </div>
+      <div class=" col-sm">
+        <div class="box-1 ">
+          <div class="content">
+            <span>Download Our App</span>  <br>
+           <div class="images">
+            <img src="images/appstore.png" alt=""> <br> <br>
+            <img src="images/gplay.png" alt="">
+           </div> &nbsp;&nbsp;
+          </div>
+      </div>
+      </div>
+    </div>
+       
+        <!--end footer  -->
+   
+   
+  <!--  <div class="box">
        <span class="h1">Hello Foodies....</span>
        <p class="text">Wel Come to my Website</p>
        <p>Enjoy your food. <p>We serve only the freshest ingriedent.</p> </p>
@@ -89,12 +174,12 @@
                  </div>
                 </div>
             </div>
-         </div>
+         </div> -->
         
        
    
 
-    <script>
+    <!-- <script>
         $(document).ready(function(){
             $('#jjj').mouseenter(function(){
                 $('.list').show()
@@ -102,9 +187,7 @@
             $('.list').mouseleave(function(){
                 $('.list').hide()
             })
-            // $('#jjj').mouseleave(function(){
-            //     $('.list').hide()
-            // })
+            
         })
 
     
@@ -112,6 +195,6 @@
 
         
     </script>
-    
+     -->
 </body>
 </html>
