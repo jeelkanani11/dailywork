@@ -37,14 +37,12 @@ ul li {
     height: 70px;
     width: 80px;
 }
-.banner img{
-    width: 100%;
-    height:350px;
-}
-.banner{
-    margin-top: 10px;
-    background-image: linear-gradient( rgba(0, 0,0.406,0.5));
-}
 
-        
-        
+
+
+.banner {
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0.406, 0.4)), url('images/f_nanner2.webp');
+}
