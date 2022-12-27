@@ -11,7 +11,7 @@
 <body>
 
 
-    <script>
+    <script type="module">
         // class car {
         //     constructor(color,engine,power){
         //         this.color=color;
@@ -34,54 +34,47 @@
         // senet.carspeed();
 
 
-
-        // class Rectangle {
-        //     constructor(hight, width) {
-        //         this.hight = hight;
-        //         this.width = width;
-        //     }
+        import Rectangle from './new.js';
+         
+         var square = new Rectangle(10, 10);
+            
+         console.log("the area of Reactangle is " + square.calcArea());
             
 
-        //     calcArea() {
-        //         return this.hight * this.width;
+
+
+
+        // class circle{
+        //     constructor(radius){
+        //         this.pi=3.14;
+        //         this.radius=radius;
+        //     }
+
+        //     calcArea(){
+        //         return this.pi*(this.radius*this.radius);
         //     }
         // }
-        // var square = new Rectangle(10, 10);
-
-        // console.log("the area of Reactangle is " + square.calcArea());
-
-
-        class circle{
-            constructor(radius){
-                this.pi=3.14;
-                this.radius=radius;
-            }
-
-            calcArea(){
-                return this.pi*(this.radius*this.radius);
-            }
-        }
-        var radius=prompt("enter value for radius")
-         var circle1= new circle(radius);
-        console.log("the area of circle is  " +circle1.calcArea());
+        // var radius=prompt("enter value for radius")
+        //  var circle1= new circle(radius);
+        // console.log("the area of circle is  " +circle1.calcArea());
 
 
 
-        class per{
-            constructor(maths,science,hindi,gujarati){
-                this.gujarati=gujarati;
-                this.maths=maths;
-                this.hindi=hindi;
-                this.science=science;
-            }
-            calper(){
-                return (this.gujarati+this.hindi+this.maths+this.science*120)/100;
-            }
-        }
+        // class per{
+        //     constructor(maths,science,hindi,gujarati){
+        //         this.gujarati=gujarati;
+        //         this.maths=maths;
+        //         this.hindi=hindi;
+        //         this.science=science;
+        //     }
+        //     calcper(){
+        //         return (this.gujarati+this.hindi+this.maths+this.science*4 )/100;
+        //     }
+        // }
 
-        var jeel=new per(80,90,79,80);
-console.log
-
+        // var jeel=new per(80,90,79,80);
+        //  console.log("per of jeel is  " +jeel.calcper());
+        
  
 
     </script>
