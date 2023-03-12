@@ -9,6 +9,7 @@
 .main {
     height: 200vh;
     width: 100%;
+    
 }
 
 .navbar .navbar-nav .nav-link {
@@ -58,4 +59,73 @@ ul li {
     width: auto;
     top: 297px;
     left: 30%;
+}
+
+.p-1{
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#btn{
+    height: 40px;
+    width: 90px;
+    border-radius: 7px;
+}
+
+
+
+
+/* footer */
+.footer {
+    height: auto;
+    width: 100%;
+    background: url(images/fbac.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.406);
+    background-blend-mode: overlay;
+
+}
+
+
+.box-1 {
+    height: auto;
+    width: 240px;
+    /* border: 1px solid white; */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.content i {
+    color: white;
+}
+
+.content {
+    color: white;
+}
+
+.content span {
+    font-size: 22px;
+    margin-left: 10px;
+
+}
+
+.content p {
+    font-size: 16px;
+    /* color: gray; */
+    color: white;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.icon i {
+    padding: 10px;
+    /* color: gray; */
+    color: white;
+    cursor: pointer;
+}
+
+.images img {
+    height: 40px;
+    width: 200px;
 }
