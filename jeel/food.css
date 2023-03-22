@@ -85,25 +85,27 @@
 .box {
 
     margin: auto;
-    margin-top: 100px;
+    margin-top: 120px;
     justify-content: center;
     text-align: center;
     animation-name: ani;
     animation-duration: 2s;
-    line-height: 28px;
+    line-height: 30px;
 
 }
 
 .h1 {
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     opacity: 0.8;
 
 }
 
+
+
 p {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     opacity: 0.8;
 
